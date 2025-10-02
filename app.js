@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
-const Listing = require("./models/listing"); // model path
+const Listing = require("./models/listing"); 
 
 const app = express();
 const MONGO_URL = "mongodb://127.0.0.1:27017/test";
@@ -32,4 +32,5 @@ app.get("/listings", async (req, res) => {
 app.listen(8080, () => {
     console.log("Server is running on port 8080");
 });
+
 
