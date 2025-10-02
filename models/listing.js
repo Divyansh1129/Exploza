@@ -2,12 +2,12 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const listingSchema = new Schema({
-    title: {   // fixed typo
+    title: {  
         type: String,
         required: true
     },
     description: String,
-    image: {   // fixed to accept object
+    image: {  
         filename: String,
         url: String
     },
@@ -18,3 +18,4 @@ const listingSchema = new Schema({
 
 const Listing = mongoose.model("Listing", listingSchema);
 module.exports = Listing;
+
